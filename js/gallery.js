@@ -43,6 +43,11 @@ function swapPhoto() {
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
+var location = document.getElementByClassName("location").innerHTML = "Location: "+ mImages[mCurrentIndex].location;
+var description = document.getElementByClassName("description").innerHTML = "Description: "+ mImages[mCurrentIndex].description;
+var date = document.getElementByClassName("date").innerHTML = "Date: "+ mImages[mCurrentIndex].date;
+
+
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest(); {
 mRequest.addEventListener("readystatechange", () => {
