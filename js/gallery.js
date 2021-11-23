@@ -51,6 +51,10 @@ function swapPhoto() {
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
+iterateJson();
+
+for (let)
+
 var location = document.getElementByClassName("location").innerHTML = "Location: "+ mImages[mCurrentIndex].location;
 var description = document.getElementByClassName("description").innerHTML = "Description: "+ mImages[mCurrentIndex].description;
 var date = document.getElementByClassName("date").innerHTML = "Date: "+ mImages[mCurrentIndex].date;
