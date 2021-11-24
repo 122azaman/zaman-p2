@@ -51,9 +51,18 @@ function swapPhoto() {
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
-iterateJson();
+function iterateJson(mJson);
+{
+  for (x=0; x< mJson.images.length; x++)
+  {
+    mImages[x] = new GalleryImage();
+    mImages[x].location = mJason.images[x].imgLocation;
+    mImages[x].description = mJason.images[x].description;
+    mImages[x].date = mJason.images[x].date;
+    mImages[x].img = mJason.images[x].imgPath;
+  }
+}
 
-for (let)
 
 var location = document.getElementByClassName("location").innerHTML = "Location: "+ mImages[mCurrentIndex].location;
 var description = document.getElementByClassName("description").innerHTML = "Description: "+ mImages[mCurrentIndex].description;
@@ -98,9 +107,9 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-
+  if ()
 	// This initially hides the photos' metadata information
-	$('.details').eq(0).hide();
+//	$('.details').eq(0).hide();
 
 });
 
