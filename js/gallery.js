@@ -107,7 +107,23 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-  if ()
+  if (const urlParams = new URLSearchParams(window.location.search);
+
+  for (const [key, value] of urlParams) {
+
+  console.log(`${key}:${value}`);
+
+  mUrl = value;
+
+  }
+
+  if(mUrl == undefined)
+
+  {
+
+  mUrl = 'images.json';
+
+})
 	// This initially hides the photos' metadata information
 //	$('.details').eq(0).hide();
 
